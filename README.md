@@ -1,4 +1,4 @@
-# EXPERIMENT NO 05 INTERFACING ANALOG OUTPUT SERVO MOTOR WITH ARDUINO
+![image](https://github.com/varsha-2005/EXPERIMENT-NO--05-INTERFACING-ANALOG-OUTPUT-SERVO-MOTOR-WITH-ARDUINO-/assets/119288183/d3bfd851-d769-43cd-aa8a-8e87b1c92510)# EXPERIMENT NO 05 INTERFACING ANALOG OUTPUT SERVO MOTOR WITH ARDUINO
 
 ### AIM
 To interface an Analog output (servo motor) and modify the angular displacement of the servo using PWM signal .
@@ -54,6 +54,12 @@ CIRCUIT DIAGRAM
 
 ### FIGURE 04 CIRCUIT DIAGRAM
 
+![Screenshot 2024-03-14 105853](https://github.com/varsha-2005/EXPERIMENT-NO--05-INTERFACING-ANALOG-OUTPUT-SERVO-MOTOR-WITH-ARDUINO-/assets/119288183/1edfe1f2-4f07-47c2-aadc-3bdc0bc1a218)
+
+SCHEMATIC DIAGRAM:
+
+![Screenshot 2024-03-14 110131](https://github.com/varsha-2005/EXPERIMENT-NO--05-INTERFACING-ANALOG-OUTPUT-SERVO-MOTOR-WITH-ARDUINO-/assets/119288183/408f976b-bd07-4a21-9a90-fc3fc5b53bdb)
+
 ### PROCEDURE:
 1.	Connect the circuit as per the circuit diagram 
 2.	Connect the board to your computer via the USB cable.
@@ -67,7 +73,52 @@ CIRCUIT DIAGRAM
 
 
 ### PROGRAM :
- 
+```
+NAME : VARSHA.G
+REISTER NUMBER : 212222230166
+DEPARTMENT : AI-DS
+
+
+#include <Servo.h>
+Servo s;
+int pos=0;
+void setup()
+{
+  s.attach(9);
+  Serial.begin(9600);
+}
+void loop()
+{
+  for(pos=0;pos<=180;pos++)
+  {
+    s.write(pos);
+    delay(20);
+    //Serial.print("Angle=");
+    Serial.println(pos);
+  }
+  for(pos=180;pos>=0;pos--)
+  {
+    s.write(pos);
+    delay(20);
+    //Serial.print("Angle=");
+    Serial.println(pos);
+  }
+
+
+```
+### OUTPUT:
+
+
+
+GRAPH:
+
+![Screenshot 2024-03-14 111828](https://github.com/varsha-2005/EXPERIMENT-NO--05-INTERFACING-ANALOG-OUTPUT-SERVO-MOTOR-WITH-ARDUINO-/assets/119288183/dbd228cd-e00a-465e-801d-8d96e08c734e)
+
+
+
+
+
+
 
 
 
