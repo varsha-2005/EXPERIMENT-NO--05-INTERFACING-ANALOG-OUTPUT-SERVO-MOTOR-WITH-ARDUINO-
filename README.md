@@ -1,4 +1,4 @@
-![image](https://github.com/varsha-2005/EXPERIMENT-NO--05-INTERFACING-ANALOG-OUTPUT-SERVO-MOTOR-WITH-ARDUINO-/assets/119288183/d3bfd851-d769-43cd-aa8a-8e87b1c92510)# EXPERIMENT NO 05 INTERFACING ANALOG OUTPUT SERVO MOTOR WITH ARDUINO
+# EXPERIMENT NO 05 INTERFACING ANALOG OUTPUT SERVO MOTOR WITH ARDUINO
 
 ### AIM
 To interface an Analog output (servo motor) and modify the angular displacement of the servo using PWM signal .
